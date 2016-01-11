@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Business support</title>
+<link rel="shortcut icon" href="http://www.nesta.org.uk/sites/all/themes/nesta_responsive/favicon.icon">
+<link rel="stylesheet" type="text/css" href="theme.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["treemap"]});
+
+google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+         
+
+          ['Programme', 'Department', 'Spending (size)', 'Type of programme (color)'],
+          ['All programmes',    null,             0,                               0],
+          ['BIS - £2,835m',   'All programmes',         2825,                               5],
+          ['DEFRA - £81m',    'All programmes',         81,                               3],
+          ['CLG - £336m',      'All programmes',         336,                               3],
+          ['HMRC - £5,566m', 'All programmes',         5565,                               1],
+          ['DWP - £64m',    'All programmes',         64,                               5],
+          ['Government for Scotland - £467m',     'All programmes',   467,              5],
+          ['Government for Northern Ireland - 235m',    'All programmes',         235,   5],
+          ['Welsh Government - £241m',     'All programmes',             241,            5],
+    
+          ['Innovate UK - £525m', 'BIS - £2,835m', 525, 0],
+          ['UKTI - £51.8m', 'BIS - £2,835m', 50, 0],
+          ['British Business Bank - £782m', 'BIS - £2,835m', 782, 0],
+          ['SFA - £66.8m', 'BIS - £2,835m', 67, 0],
+          ['UKCES - £49m', 'BIS - £2,835m', 52, 0],
+          ['GIB - £685m', 'BIS - £2,835m', 685, 0],
+          ['Other - £663m', 'BIS - £2,835m', 663, 0],
+          
+          ['Rural Development Programme for England - £81m', 'DEFRA - £81m', 81, 3],     
+          
+          ['ERDF Cornwall and Isles of Scilly - £24m', 'CLG - £336m',  24,  3],
+          ['ERDF East Midlands - £58m', 'CLG - £336m', 58, 3],
+          ['ERDF East of England - £22m', 'CLG - £336m', 22, 3],
+          ['ERDF North West England - £36m', 'CLG - £336m', 36, 3],
+          ['ERDF South East England - £1m', 'CLG - £336m', 1, 3],
+          ['ERDF South West England - £11m', 'CLG - £336m', 11, 3],
+          ['ERDF West Midlands - £64m', 'CLG - £336m', 63, 3],  
+          ['ERDF Yorkshire and the Humber - £18m', 'CLG - £336m', 18, 3],
+          ['ERDF London - £8m', 'CLG - £336m', 8, 3],
+          ['ERDF North East England - £6m', 'CLG - £336m', 6, 3],
+	  ['Local Enterprise Partnerships - £40m', 'CLG - £336m', 40, 5],
+	  ['Enterprise Zones Tax Breaks - £47m', 'CLG - £336m', 47, 1],
+          
+          ['Venture Capital Trust - £130m', 'HMRC - £5,566m', 130, 1], 
+          ['Enterprise Investment Scheme - £300m', 'HMRC - £5,566m', 300, 1],
+          ['Seed Investment Enterprise Scheme - £60m', 'HMRC - £5,566m', 60, 1],
+          ['R&D Tax Credits - £1,325m', 'HMRC - £5,566m', 1325, 1],
+          ['Film Tax Reliefs - £225m', 'HMRC - £5,566m', 225, 1],
+          ['Enterprise Investment Scheme - £60m', 'HMRC - £5,566m', 60, 1],
+          ['Relief for Entrepreneurs Qualifying Business Disposals - £3m', 'HMRC - £5,566m', 2, 1],
+          ['Tonnage Tax - £100m', 'HMRC - £5,566m', 100, 1],
+          ['Tied Oil Scheme - £1,208m', 'HMRC - £5,566m', 1208, 1],
+          ['Small Companies Reduced Rate tax - £1,785m', 'HMRC - £5,566m', 1875, 1],
+          ['Patent Box - £350m', 'HMRC - £5,566m', 350, 1],
+          ['Venture Capital Trust - £5m', 'HMRC - £5,566m', 5, 1],
+          ['Seed Investment Enterprise Scheme - £5m', 'HMRC - £5,566m', 5, 1],
+          ['Relief for Trading Losses Against Capital Gains - £10m', 'HMRC - £5,566m', 10, 1],
+          
+          ['New Enterprise Allowance - £64m', 'DWP - £64m', 64, 5],
+          
+          ['Enterprise Areas - £6m', 'Government for Scotland - £467m', 6, 1],
+	  ['Scottish Investment Bank - £32m', 'Government for Scotland - £467m', 32, 4],
+	  ['Scottish Enterprise Account Management and Specialist Advisory Services - £17m', 'Government for Scotland - £467m', 17, 2],
+	  ['Scottish Enterprise Innovation and R&D Support - £23m', 'Government for Scotland - £467m', 23, 2],
+	  ['Scottish Enterprise Enterprise Support Programme - £5m', 'Government for Scotland - £467m', 5, 5], 
+	  ['Scottish Enterprise Internationalisation - £17m', 'Government for Scotland - £467m', 17, 5],
+	  ['Scottish Enterprise Comercialisation - £8m', 'Government for Scotland - £467m', 8, 5],
+	  ['Regional Selective Assistance and SMART Support - £41m', 'Government for Scotland - £467m', 41, 3],
+	  ['Scottish Enterprise Industry Sector Project Support - £15m', 'Government for Scotland - £467m', 15, 3],
+	  ['Scottish Enterprise Business Infrastructure Projects - £41m', 'Government for Scotland - £467m', 41, 2],
+	  ['Scottish Enterprise Equity Investment & Loans - £22m', 'Government for Scotland - £467m', 22, 4],
+	  ['Scottish Enterprise Marketing & Research - Domestic - £3m', 'Government for Scotland - £467m', 3, 2],
+	  ['Scottish Enterprise Marketing & Research - Overseas - £4m', 'Government for Scotland - £467m', 4, 2],
+	  ['Highlands & Islands Enterprise - £85m', 'Government for Scotland - £467m', 85, 5],
+	  ['Highlands & Islands ERDF Axis 1 - £14m', 'Government for Scotland - £467m', 14, 3],
+	  ['Highlands & Islands ERDF Axis 2 - £11m', 'Government for Scotland - £467m', 11, 3],
+	  ['Lowlands & Uplands ERDF Axis 1 - £30m', 'Government for Scotland - £467m', 30, 3],
+	  ['Lowlands & Uplands ERDF Axis 2 - £37m', 'Government for Scotland - £467m', 37, 3],
+	  ['Rural Development Fund Axis 1 - £57m', 'Government for Scotland - £467m', 57, 3],
+        
+          
+
+          ['ERDF Axis 1 - £39m', 'Government for Northern Ireland - 235m', 39, 3],
+	  ['ERDF Axis 2 - £25m', 'Government for Northern Ireland - 235m', 25, 3],    
+          ['Invest Industrial Development Grants - £24m', 'Government for Northern Ireland - 235m', 23, 3],
+          ['Invest R&D Programme - £38m', 'Government for Northern Ireland - 235m', 37, 3],
+          ['Invest Enterprise Programme - £21m', 'Government for Northern Ireland - 235m', 20, 3],
+          ['Invest Business Improvement Training Programme - £5m', 'Government for Northern Ireland - 235m', 5, 2],
+          ['Invest Business Support Grants - <£0.5m', 'Government for Northern Ireland - 235m', 0, 3],
+          ['Invest Jobs Fund - £8m', 'Government for Northern Ireland - 235m', 8, 3],
+          ['Invest Property Support - £3m', 'Government for Northern Ireland - 235m', 3, 2],
+          ['Invest Property Assistance - <£0.5m', 'Government for Northern Ireland - 235m', 1, 2],
+          ['Invest Third party Grants - £1m', 'Government for Northern Ireland - 235m', 1, 3],
+          ['Invest Trade and Market Access Support - £40', 'Government for Northern Ireland - 235m', 40, 5],
+          ['Invest Overseas Operation Support - £5m', 'Government for Northern Ireland - 235m', 5, 5],
+          ['Invest Project Consultancy and Appraisal - £2m', 'Government for Northern Ireland - 235m', 2, 2],         
+          ['Invest Promotion and Marketing Support - £9m', 'Government for Northern Ireland - 235m', 9, 2],
+          ['Invest Programme Support Activities - £2m', 'Government for Northern Ireland - 235m', 2, 2],
+	  ['Rural Development Programme Axis 1 - £9m', 'Government for Northern Ireland - 235m', 9, 3],
+	  ['Intertrade Ireland - £3m', 'Government for Northern Ireland - 235m', 3, 5],
+            
+          ['Rural Development Fund Axis 1 - £15m', 'Welsh Government - £241m', 15, 3],
+	  ['Funding to Wales Cooperative Centre -  £6m', 'Welsh Government - £241m', 6, 3],
+          ['Finance Wales Funds - £33m', 'Welsh Government - £241m', 33, 4],
+	  ['Wales Economic Growth Fund - £19m', 'Welsh Government - £241m', 19, 3],
+	  ['Academic Expertise for Business - £14m', 'Welsh Government - £241m', 14, 3],
+	  ['SMART Cymru - £2m', 'Welsh Government - £241m', 2, 3],
+	  ['Business Rates Support - £1m', 'Welsh Government - £241m', 1, 1],
+	  ['ERDF Axis 1 - £89m', 'Welsh Government - £241m', 89, 3],
+	  ['ERDF Axis 2 - £45m', 'Welsh Government - £241m', 45, 3],
+	  ['Enterprise Zones Business Rate Scheme - £2m', 'Welsh Government - £241m', 2, 1],
+	  ['Entrepreneurship and Business Information - £15m', 'Welsh Government - £241m', 15, 2],   
+           
+          
+          ['Enteprise Capital Funds - £26m' , 'British Business Bank - £782m', 26, 4],
+          ['Aspire Fund - £5m' , 'British Business Bank - £782m', 6, 4],
+          ['UKIIF - £64m' , 'British Business Bank - £782m', 64, 4],
+          ['VC Catalyst Fund - £4m' , 'British Business Bank - £782m', 4, 4],
+          ['Angel Co-Fund - £2.5m' , 'British Business Bank - £782m', 3, 4],
+          ['Regional Venture Capital Fund - £4m' , 'British Business Bank - £782m', 4, 4],
+          ['Early Growth Fund - £1m' , 'British Business Bank - £782m', 1, 4],
+          ['Capital for Enterprise Fund - £0.7m' , 'British Business Bank - £782m', 1, 4],
+          ['Startup Loans - £70m' , 'British Business Bank - £782m', 70, 4],
+          ['BFP Small Business Tranche - £40m' , 'British Business Bank - £782m', 40, 4],
+          ['Investment Programme - £1m' , 'British Business Bank - £782m', 1, 4],
+          ['Other British Business Bank', 'British Business Bank - £782m', 566, 4],
+            
+          ['Westernmost Rough - £241m', 'GIB - £685m', 241, 4],
+          ['Gwynt y Mor - £220m', 'GIB - £685m', 220, 4],
+          ['London Array - £59m', 'GIB - £685m', 59, 4],
+          ['West London - £20m', 'GIB - £685m', 20, 4],
+ 	  ['Merseyside - £20m', 'GIB - £685m', 20, 4],
+          ['Birmingham BioPower - £12m', 'GIB - £685m', 12, 4],
+          ['Foresight Fund-Birmingham - £6m', 'GIB - £685m', 6, 4],
+          ['Norfolk - £51m', 'GIB - £685m', 51, 4],
+          ['Greensphere Fund-Port Talbot - £11m', 'GIB - £685m', 11, 4],
+          ['Foresight Fund - Evermore - £20m', 'GIB - £685m', 20, 4],
+          ['Cheltenham Hospital - £1m', 'GIB - £685m', 1, 4],
+          ['St Barts Hospital £1m', 'GIB - £685m', 1, 4],
+          ['Bernard Matthews - £12m', 'GIB - £685m', 12, 4],
+          ['National Car Parks - £4m', 'GIB - £685m', 4, 4],
+          ['Tomatin Distillery - £0.6m', 'GIB - £685m', 0, 4],
+          ['School Biomass - £<0.5m', 'GIB - £685m', 0, 4],
+          ['Kingspan - £<0.5m', 'GIB - £685m', 0, 4],
+          ['Roundwood Energy - £4.9m', 'GIB - £685m', 4, 4],
+            
+          ['Energy - £22m', 'Innovate UK - £525m', 22, 3],
+		  ['Sustainability - £3m', 'Innovate UK - £525m', 3, 3],
+		  ['Built environment - £30m', 'Innovate UK - £525m', 30, 3],
+		  ['Food supply - £9m', 'Innovate UK - £525m', 9, 3], 
+		  ['Transports - £28m', 'Innovate UK - £525m', 28, 3],
+		  ['Space - £4.6m', 'Innovate UK - £525m', 5, 3],
+		  ['Healthcare - £45m', 'Innovate UK - £525m', 45, 3],
+		  ['High value manufacturing - £13m', 'Innovate UK - £525m', 13, 3],
+		  ['Digital services - £13m', 'Innovate UK - £525m', 13, 3],
+		  ['Advanced materials - £6m', 'Innovate UK - £525m', 6, 3],
+		  ['Biosciences - £5m', 'Innovate UK - £525m', 5, 3],
+		  ['Electronics, photonics & electrical systems - £9m', 'Innovate UK - £525m', 9, 3],
+		  ['Information & communication technology - £8m', 'Innovate UK - £525m', 8, 3],
+	      ['Development - £5m', 'Innovate UK - £525m', 5, 3],
+		  ['Small Business Research Initiative - £7m', 'Innovate UK - £525m', 7, 3],
+		  ['Eurostars - £2.5m', 'Innovate UK - £525m', 3, 3],
+		  ['Grant for Research & Development - £39m', 'Innovate UK - £525m', 39, 3],
+		  ['Knowledge Transfer Networks - £15m', 'Innovate UK - £525m', 15, 3],
+		  ['Knowledge Transfer Partnerships - £16m', 'Innovate UK - £525m', 16, 3],
+		  ['Catapult Centres - 141m', 'Innovate UK - £525m', 141, 3],
+		  ['Micro Nano Technology Centres - £<0.5m', 'Innovate UK - £525m', 1, 3],
+		  ['Non-core projects - £96m', 'Innovate UK - £525m', 96, 3],
+		  ['Vouchers - £2.6m', 'Innovate UK - £525m', 3, 3],
+
+          ['International Trade Teams/Advisors - £23.6m', 'UKTI - £51.8m', 24, 2],  
+          ['Tradeshow Access Programme - £16m', 'UKTI - £51.8m', 16, 3], 
+		  ['Passport to export - £2m', 'UKTI - £51.8m', 2, 2],
+		  ['High Value Opportunities - £8.7m', 'UKTI - £51.8m', 9, 2],
+
+		  ['Apprenticeship Grant for Employers - £54m', 'SFA - £66.8m', 55, 3], 	
+ 		  ['Employer Ownership of Skills - £11m', 'SFA - £66.8m', 11, 3],
+          
+          ['Employer Investment Fund - £28.7m', 'UKCES - £49m', 29, 3],
+          ['Growth and Innovation Fund - £14.7m', 'UKCES - £49m', 15, 3],
+		  ['Investors in People - £1m', 'UKCES - £49m', 1, 2],
+            
+          ['Growth Vouchers - £3m', 'Other - £663m', 3, 3],
+		  ['Growth Accelerator - £71m', 'Other - £663m', 71, 2],
+		  ['Business Support Helpline and advice - £2m', 'Other - £663m', 2, 2],
+	      ['Grants for business investments (large projects) - £34m', 'Other - £663m', 34, 3],
+		  ['Compensation for the indirect cost of EU ETS and Carbon Price Support - £25.5m', 'Other - £663m', 26, 3],
+		  ['Regional Growth Fund - £506m', 'Other - £663m', 506, 3],
+		  ['City Deals - £5.6m', 'Other - £663m', 6, 3],
+
+        ]);
+
+        tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+	
+
+        tree.draw(data, {
+          minColor: 'CC0000',
+          midColor: '#009900',
+          maxColor: '0000CC',
+          fontColor: 'white', 
+	  fontSize: '16',
+	  fontFamily: 'Raleway',
+	  highlightOnMouseOver: true,
+	  maxDepth: 1,
+          maxPostDepth: 2,
+	  hintOpacity: 0.9,
+	  minHighlightColor: '#8c6bb1',
+          midHighlightColor: '#9ebcda',
+          maxHighlightColor: '#edf8fb',
+	  headerColor: '#edf8fb',
+	  showScale:false
+
+        });
+
+      }
+
+google.visualization.events.addListener(data, 'select', selectHandler);
+
+function selectHandler(e) {
+  alert('A table row was selected');
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Business support by department</h1>
+<p> Blablablalblablablablablabla.</p>
+ <div id="chart_div" style="width: 900px; height: 500px;"></div>
+
+</body>
+</html>
